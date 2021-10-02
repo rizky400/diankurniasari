@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <title>Web Prediksi Perkembangan Harga Saham </title>
+    </head>
+    <body
+        class="
+            flex flex-col
+            justify-between
+            item-center
+            p-8
+            min-h-screen
+            bg-gradient-to-r
+            from-green-400
+            to-blue-500
+            text-gray-800
+            md:flex-row
+        "
+    >
+        <main class="bg-white p-16 rounded-lg">
+            <h1 class="text-3xl font-bold mb-8">
+    <h1>Hasil Prediksi </h1>
+    <div class ="container">
+        <h3>Prediksi =
+            {% if hasil < 0.5%}
+                 Harga Saham Turun
+            {% elif hasil >= 0.5 %}
+                 Harga Saham Naik
+            {% endif %}</h3>
+            Akurasi = {{hasil}}
+    </div>
+</body>
+</html>

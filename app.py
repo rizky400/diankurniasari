@@ -23,7 +23,7 @@ app = Flask(__name__)
 #model = pickle.load(model_file, encoding='bytes')
 
 @app.route("/")
-def template_test():
+def index():
     return render_template('index.html')
 
 @app.route('/predict',methods=['POST'])

@@ -86,5 +86,5 @@ def predict():
     y = accuracy_score(Y_test.argmax(axis=1), predict.argmax(axis=1))
 
     return render_template('result.html',hasil = y)
-if __name__=='__main__':
-     app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)

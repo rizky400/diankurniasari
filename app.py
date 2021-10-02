@@ -17,11 +17,11 @@ from sklearn.preprocessing import StandardScaler
 from keras.layers import Dense
 from keras.models import Sequential
 #from keras import layers
-app = Flask(__name__)
+#app = Flask(__name__)
 
 #model_file = open('model.pkl', 'rb')
 #model = pickle.load(model_file, encoding='bytes')
-
+app = flask.Flask(__name__, template_folder='template')
 @app.route('/')
 def index():
     return render_template('index.html')
